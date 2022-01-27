@@ -1,0 +1,40 @@
+.work .container {
+  flex-direction: column;
+}
+
+.work-list {
+  display: flex;
+  & li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.image-discription {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.work-text {
+  display: block;
+}
+
+.work-img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.work-text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+}

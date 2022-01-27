@@ -1,0 +1,18 @@
+.link:hover,
+.link:focus,
+.buttons:hover,
+.buttons:focus,
+.nav-link:focus,
+.nav-link:hover {
+  color: var(---accent-color);
+  cursor: pointer;
+  outline: none;
+}
+.link:hover .link-icon,
+.link:focus .link-icon {
+  fill: var(---accent-color);
+}
+
+span {
+  color: var(---accent-color);
+}
