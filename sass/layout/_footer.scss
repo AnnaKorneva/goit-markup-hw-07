@@ -6,7 +6,7 @@
   padding-top: 60px;
 }
 
-.footer-logo {
+.footer-wrap__logo {
   display: inline-block;
   margin-bottom: 20px;
   font-weight: 700;
@@ -17,7 +17,7 @@
   letter-spacing: 0.03em;
   font-family: Raleway;
 }
-.footer-adress {
+.footer-wrap__adress {
   font-size: 14px;
   margin-bottom: 9px;
   text-decoration: none;
@@ -25,7 +25,7 @@
   color: #ffffff;
   letter-spacing: 0.03em;
 }
-.footer-info {
+.footer-wrap__info {
   font-size: 14px;
   line-height: 1.71;
   color: #ffffff;
@@ -36,16 +36,16 @@
     margin-bottom: 9px;
   }
 }
-.footer-info .footer-links {
+.footer-wrap__info .footer-wrap__links {
   flex-direction: column;
 }
 
-.footer-links a {
+.footer-wrap__links a {
   display: block;
   flex-direction: column;
 }
 
-.add {
+.footer-social__text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +58,7 @@
   text-transform: uppercase;
 }
 
-.footer-social-link {
+.footer-social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,11 +79,11 @@
   }
 }
 
-.footer-social-links {
+.footer-social__links {
   display: flex;
 }
 
-.footer-social-items:not(:last-child) {
+.footer-social__items:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -91,7 +91,7 @@
   display: flex;
 }
 
-.right {
+.footer-social {
   display: flex;
   flex-direction: column;
   margin-top: 12px;
@@ -104,7 +104,7 @@
   flex-direction: column;
 }
 
-.text-subscribe {
+.subscribe__text {
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
@@ -115,7 +115,7 @@
   margin-bottom: 20px;
 }
 
-.email-subscribe {
+.subscribe__email {
   margin-right: 12px;
   padding-left: 16px;
   width: 358px;
@@ -129,9 +129,14 @@
   &::placeholder {
     padding: 15px 295px 15px 0;
   }
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: var(---accent-color);
+  }
 }
 
-.submit-subscribe {
+.subscribe__submit {
   width: 200px;
   height: 50px;
   padding-left: 29px;
@@ -143,27 +148,18 @@
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  &:hover,
-  &:focus {
-    outline: none;
-    border-color: var(---accent-color);
-  }
 }
 
-.button-subscribe {
+.subscribe__button {
   position: relative;
 }
 
-.icon-subscribe {
+.subscribe__icon {
   position: absolute;
   top: 12px;
   right: 28px;
 }
 
-.label-submit {
-  color: #ffffff;
-}
-
-.footer-links {
+.footer-wrap__links {
   margin-right: 70px;
 }
