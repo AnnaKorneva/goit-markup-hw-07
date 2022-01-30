@@ -19,15 +19,22 @@
 }
 .footer-wrap__adress {
   font-size: 14px;
+  font-weight: 400;
   margin-bottom: 9px;
   text-decoration: none;
   line-height: 1.71;
   color: #ffffff;
   letter-spacing: 0.03em;
+  &:hover,
+  &:focus {
+    color: var(---accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .footer-wrap__info {
   font-size: 14px;
   line-height: 1.71;
+  font-weight: 400;
   color: #ffffff;
   text-decoration: none;
   opacity: 0.7;
@@ -35,7 +42,13 @@
   &:not(:last-child) {
     margin-bottom: 9px;
   }
+  &:hover,
+  &:focus {
+    color: var(---accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
+
 .footer-wrap__info .footer-wrap__links {
   flex-direction: column;
 }
