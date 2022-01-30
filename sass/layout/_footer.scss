@@ -16,6 +16,11 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   font-family: Raleway;
+  &:hover,
+  &:focus {
+    color: var(---accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .footer-wrap__adress {
   font-size: 14px;
